@@ -88,6 +88,7 @@ def compute(set, id):  # sourcery no-metrics skip: assign-if-exp, boolean-if-exp
             else:
                 for _ in range(2): set.pop(i - 1)
                 set[i - 1] = False
+            i = 0
         elif set[i] == '>': 
             if set[i - 1] == set[i + 1] or set[i + 1]:
                 for _ in range(2): set.pop(i - 1)
@@ -95,6 +96,7 @@ def compute(set, id):  # sourcery no-metrics skip: assign-if-exp, boolean-if-exp
             else:
                 for _ in range(2): set.pop(i - 1)
                 set[i - 1] = False
+            i = 0
         else:
             i += 1
     
