@@ -39,7 +39,8 @@ def parce(equation):
 
     while '(' in equation:
         for i in range(len(equation)):
-            if equation[i] == '(': x = i
+            if equation[i] == '(': 
+                x = i
             if equation[i] == ')': 
                 y = i
                 equation.pop(y)
@@ -113,4 +114,5 @@ def compute(set, id):  # sourcery no-metrics skip: assign-if-exp, boolean-if-exp
             masterlist[x].pop(0)
         buildStatement(vars, statement, masterlist)
 
-if __name__ == "__main__": main()
+if __name__ == "__main__": 
+    main()
