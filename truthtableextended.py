@@ -33,9 +33,9 @@ def buildStatement(variables, statement, masterlist):
         if masterlist[o][0]: print('T', end= ' ')
         else: print('F', end= ' ')
 
-    parce(equation)
+    parse(equation)
 
-def parce(equation):
+def parse(equation):
 
     while '(' in equation:
         for i in range(len(equation)):
