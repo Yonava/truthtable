@@ -52,7 +52,7 @@ def parse(equation):
         equation[x] = compute(sub_equation, True)
     compute(equation, False)
 
-def compute(set, id):  # sourcery no-metrics skip: assign-if-exp, boolean-if-exp-identity, hoist-statement-from-if, merge-duplicate-blocks, remove-redundant-if, split-or-ifs
+def compute(set, id):
 
     i = 0
 
